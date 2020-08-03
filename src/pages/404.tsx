@@ -3,7 +3,7 @@ import { graphql, Link, PageProps } from "gatsby"
 import Layout from "../components/layout"
 import SEO from "../components/seo"
 
-const IndexPage: React.FC<PageProps<{}>> = ({ data }) => {
+const NotFound: React.FC<PageProps<{}>> = ({ data }) => {
   return (
     <Layout title="项目介绍">
       <SEO title="邓清的个人简历" />
@@ -13,7 +13,7 @@ const IndexPage: React.FC<PageProps<{}>> = ({ data }) => {
           <li>简历部分是采用mdnice编写排版</li>
           <li>暂时该项目只展示简历，可能后续会展示其他东西。</li>
           <li>
-            <Link to="/resume">查看简历</Link>
+            <Link to="/">查看简历</Link>
           </li>
         </ul>
       </div>
@@ -21,4 +21,4 @@ const IndexPage: React.FC<PageProps<{}>> = ({ data }) => {
   )
 }
 
-export default IndexPage
+export default NotFound
