@@ -12,7 +12,7 @@ import { useStaticQuery, graphql } from "gatsby"
 import Header from "./header"
 import "./layout.css"
 
-const Layout = ({ children }) => {
+const Layout = ({ title, children }) => {
   const data = useStaticQuery(graphql`
     query SiteTitleQuery {
       site {
@@ -25,19 +25,42 @@ const Layout = ({ children }) => {
 
   return (
     <>
-      <Header siteTitle={data.site.siteMetadata.title} />
+      <Header siteTitle={title || data.site.siteMetadata.title} />
       <div
         style={{
           margin: `0 auto`,
+          padding: "25px 20px",
           maxWidth: 960,
-          padding: `0 1.0875rem 1.45rem`,
         }}
       >
         <main>{children}</main>
-        <footer>
-          © {new Date().getFullYear()}, Built with
+        <footer
+          style={{ textAlign: "center", padding: "20px", color: "#5e709d" }}
+        >
+          © {new Date().getFullYear()}, 邓清
           {` `}
-          <a href="https://www.gatsbyjs.org">Gatsby</a>
+          <a
+            style={{
+              color: "#5e709d",
+              // fontSize: "14px",
+              marginRight: "12px",
+              marginLeft: "12px",
+              textDecoration: "none",
+            }}
+            href="https://github.com/1247748612"
+          >
+            github地址
+          </a>
+          <a
+            style={{
+              color: "#5e709d",
+              marginRight: "12px",
+              textDecoration: "none",
+            }}
+            href="https://github.com/1247748612"
+          >
+            项目地址
+          </a>
         </footer>
       </div>
     </>
@@ -45,6 +68,7 @@ const Layout = ({ children }) => {
 }
 
 Layout.propTypes = {
+  title: PropTypes.string,
   children: PropTypes.node.isRequired,
 }
 
