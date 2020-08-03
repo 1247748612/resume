@@ -1,0 +1,2 @@
+(window.webpackJsonp=window.webpackJsonp||[]).push([[6],{fM2T:function(e,t,n){"use strict";n.r(t),n.d(t,"query",(function(){return u}));var a=n("q1tI"),r=n.n(a),l=n("Bl7J"),i=n("vrFN");t.default=function(e){var t=e.data.markdownRemark;return r.a.createElement(l.a,{title:t.frontmatter.title},r.a.createElement(i.a,{title:"邓清的个人简历"}),r.a.createElement("div",null,r.a.createElement("div",{dangerouslySetInnerHTML:{__html:t.html}})))};var u="471609186"}}]);
+//# sourceMappingURL=component---src-templates-markdown-template-tsx-25e35a763598eacd23ee.js.map
