@@ -1,4 +1,5 @@
 module.exports = {
+  pathPrefix: "/dengqing",
   siteMetadata: {
     title: `邓清的个人简历`,
     description: `简历是gatsby实现的，文档编排是采用mdnice`,
