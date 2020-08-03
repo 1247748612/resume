@@ -57,9 +57,9 @@ const Layout = ({ title, children }) => {
               marginRight: "12px",
               textDecoration: "none",
             }}
-            href="https://github.com/1247748612"
+            href="https://github.com/1247748612/resume"
           >
-            项目地址
+            该项目地址
           </a>
         </footer>
       </div>
