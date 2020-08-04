@@ -1,3 +1,4 @@
-FROM jdrouet/gatsby
-WORKDIR /app
-COPY ./public public
+FROM scratch
+WORKDIR  /app
+COPY ./public ./public
+CMD ["/app"]
