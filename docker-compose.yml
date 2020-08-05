@@ -2,7 +2,7 @@ version: "3.8"
 
 services:
   resume:
-    image: dengqing/resume
+    image: dengqing/resume:latest
     container_name: dengqing-resume
     volumes:
       - resume_public:/app/public

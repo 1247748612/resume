@@ -1,4 +1,3 @@
-FROM scratch
-WORKDIR  /app
-COPY ./public ./public
-CMD ["/app"]
+FROM alpine
+WORKDIR /app
+COPY ./public public
